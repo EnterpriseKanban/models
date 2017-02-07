@@ -1,0 +1,19 @@
+{
+  "name": "esd_models",
+  "version": "0.1.0",
+  "description": "Models used by the enterprise software development application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JimBarrows/esd_models.git"
+  },
+  "author": "Jim Barrows",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/JimBarrows/esd_models/issues"
+  },
+  "homepage": "https://github.com/JimBarrows/esd_models#readme"
+}
