@@ -1,12 +1,19 @@
 // features/support/world.js
-require('chromedriver')
-var seleniumWebdriver = require('selenium-webdriver');
+require('pg');
+
+var pg = require('pg-promise')();
+
+var client = pg({
+    host: 'localhost',
+    database: 'enterprisekanban',
+    user: 'postgres'
+});
+
 var {defineSupportCode} = require('cucumber');
 
 function CustomWorld() {
-  this.driver = new seleniumWebdriver.Builder()
-    .forBrowser('chrome')
-    .build();
+  this.pg = pg;
+  this.db = client;
 }
 
 defineSupportCode(function({setWorldConstructor}) {
