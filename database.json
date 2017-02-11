@@ -2,10 +2,10 @@
     "defaultEnv": "local",
     "local": {
         "driver": "pg",
-        "user": "postgres",
-        "password": "",
+        "user": "EnterpriseKanban",
+        "password": "EnterpriseKanban",
         "host": "localhost",
-        "database": "enterprisekanban"
+        "database": "EnterpriseKanban"
     },
     "sql-file" : true
 }

@@ -5,8 +5,9 @@ var pg = require('pg-promise')();
 
 var client = pg({
     host: 'localhost',
-    database: 'enterprisekanban',
-    user: 'postgres'
+    database: 'EnterpriseKanban',
+    user: 'EnterpriseKanban',
+    password: 'EnterpriseKanban'
 });
 
 var {defineSupportCode} = require('cucumber');
