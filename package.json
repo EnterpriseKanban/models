@@ -7,6 +7,7 @@
     "db:down": "db-migrate down",
     "db:reset": "db-migrate reset",
     "db:up": "db-migrate up",
+    "pretest": "npm run db:up",
     "start": "docker run --detach --publish 5432:5432 --net enterprisekanban --name ek_db ek_dbs",
     "test": "cucumber-js"
   },
