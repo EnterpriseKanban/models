@@ -7,7 +7,6 @@
     "db:down": "db-migrate down",
     "db:reset": "db-migrate reset",
     "db:up": "db-migrate up",
-    "pretest": "npm run db:up",
     "start": "docker run --detach --publish 5432:5432 --net enterprisekanban --name ek_db ek_dbs",
     "test": "cucumber-js"
   },
@@ -32,6 +31,7 @@
   "dependencies": {
     "db-migrate": "^0.10.0-beta.20",
     "db-migrate-pg": "^0.1.11",
+    "pg-pool": "^1.6.0",
     "pg-promise": "^5.5.6"
   }
 }

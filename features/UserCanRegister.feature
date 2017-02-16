@@ -11,3 +11,10 @@ Feature: User can register
     When I register
     Then I will be logged in
       And I will be on my personal page
+
+Scenario: Registering a user requires the first name to be provided
+  Given I have provided my last name as "Tester"
+    And I have provided my email address as "chester@tester.com"
+    And I have provided my password as "chestertester"
+  When I register
+  Then I will be given a message that says "The first name is required"
