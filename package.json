@@ -8,7 +8,7 @@
     "db:reset": "db-migrate reset",
     "db:up": "db-migrate up",
     "start": "docker run --detach --publish 5432:5432 --net enterprisekanban --name ek_db ek_dbs",
-    "test": "cucumber-js"
+    "test": "cucumber-js features/*.feature -r feature_support/"
   },
   "repository": {
     "type": "git",
